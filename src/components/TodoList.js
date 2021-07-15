@@ -42,7 +42,7 @@ function TodoList() {
 
   return (
     <>
-      <h1>To Do List</h1>
+    <img className="titleLogo" src={`${process.env.PUBLIC_URL}/imgs/title.PNG`} alt="logo" height="50px" width="200px"/>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}

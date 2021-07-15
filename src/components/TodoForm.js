@@ -42,7 +42,7 @@ function TodoForm(props) {
       ) : (
         <>
           <input
-            placeholder='Add to list'
+            placeholder='Add to Skylist'
             value={input}
             onChange={handleChange}
             name='text'
