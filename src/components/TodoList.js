@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
+import Button from './SaveBtn/SaveBtn'
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -42,8 +43,10 @@ function TodoList() {
 
   return (
     <>
-    <img className="titleLogo" src={`${process.env.PUBLIC_URL}/imgs/title.PNG`} alt="logo" height="50px" width="200px"/>
-      <TodoForm onSubmit={addTodo} />
+    <Button name="Save"></Button>
+    <h1>SkyList</h1>
+    <p>Your personal decentralized ToDo list!</p>
+    <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
         completeTodo={completeTodo}
@@ -51,6 +54,7 @@ function TodoList() {
         updateTodo={updateTodo}
       />
     </>
+    
   );
 }
 
