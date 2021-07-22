@@ -113,3 +113,15 @@ p{
 .edit-icon {
   color: #fff;
 }
+
+.skyBtn {
+  padding: 12px;
+  margin: 20px;
+  width: 100px;
+  border: none;
+  font-size: 15px;
+  font-weight: 900; 
+  border-radius: 10px;
+  background: rgb(33, 238, 26);
+  color: rgb(255, 255, 255);
+}
